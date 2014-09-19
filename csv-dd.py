@@ -20,7 +20,7 @@ dict = {}
 print "Duplicate records:"
 with open(inFile) as f:
 	for line in f:
-		key, value = line.replace("\n", "").split(',')
+		value, key = line.replace("\n", "").split(',')
 		if key not in dict:
 			dict[key] = [value]
 		else:
