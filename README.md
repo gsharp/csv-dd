@@ -1,15 +1,12 @@
 # csv-dd
-======
 
 a little csv parser and de-duper
 
 ## Usage:
-======
 
 `python csv-dd input.csv output.csv`
 
 ## Input:
-========
 
 * should be two columns csv format
 * split by ','
@@ -30,7 +27,7 @@ Glen,50
 **Note: records can possibly duplicate**
 
 ## Output should:
-=======
+
 * output similar csv format
 * populate right column with only unique id's
 * populate left column with associated values (names) separated by ; and not duplicate
