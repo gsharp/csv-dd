@@ -19,14 +19,14 @@ dict = {}
 # parse the incoming file and populate the dict
 print "Duplicate records:"
 with open(inFile) as f:
-    for line in f:
-        key, value = line.replace("\n", "").split(',')
-        if key not in dict:
-        	dict[key] = [value]
-        else:
-        	if value not in dict[key]:
-						print "appending", value, "to ", key
-						dict[key].append(value)
+	for line in f:
+		key, value = line.replace("\n", "").split(',')
+		if key not in dict:
+			dict[key] = [value]
+		else:
+			if value not in dict[key]:
+				print "appending", value, "to ", key
+				dict[key].append(value)
 
 print "\n:: example output ::"
 
