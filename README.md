@@ -3,7 +3,7 @@
 
 a little csv parser and de-duper
 
-## Usage: 
+## Usage:
 ======
 
 `python csv-dd input.csv output.csv`
@@ -16,32 +16,32 @@ a little csv parser and de-duper
 
 Example:
 ```
-20,Glen
-30,Jesse
-10,Sean
-40,Sean
-50,Jesse
-60,Jesse
-50,Glen
-40,Jesse
-40,Jesse
-50,Glen
+Glen,20
+Jesse,30
+Sean,10
+Sean,40
+Jesse,50
+Jesse,60
+Glen,50
+Jesse,40
+Jesse,40
+Glen,50
 ```
 **Note: records can possibly duplicate**
 
 ## Output should:
 =======
 * output similar csv format
-* populate left column with only unique number id's
-* populate right column with associated values (names) separated by ; and not duplicate
+* populate right column with only unique id's
+* populate left column with associated values (names) separated by ; and not duplicate
 * columns should still split by ','
 
 Example:
 ```
-10,Sean
-20,Glen
-30,Jesse
-50,Jesse;Glen
-40,Sean;Jesse
-60,Jesse
+Sean,10
+Glen,20
+Jesse,30
+Jesse;Glen,50
+Sean;Jesse,40
+Jesse,60
 ```
